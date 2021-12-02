@@ -1,0 +1,50 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5616344213485718
+    }
+  },
+  {
+    "text": "I want to start the interview",
+    "intent": "start_interview",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.5770457983016968
+    }
+  },
+  {
+    "text": "Please start the interview",
+    "intent": "start_interview",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.8089802265167236
+    }
+  },
+  {
+    "text": "Ok lets begin the interview",
+    "intent": "start_interview",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9028899669647217
+    }
+  },
+  {
+    "text": "Iam ready for the interview",
+    "intent": "start_interview",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.8230516910552979
+    }
+  },
+  {
+    "text": "Can we start?",
+    "intent": "start_interview",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.6912068724632263
+    }
+  }
+]
