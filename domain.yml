@@ -1,0 +1,116 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- start_interview:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- first:
+    use_entities: true
+
+
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_start_interview:
+  - text: Sure,Shall we proceed?
+  utter_end_interview:
+  - text: Thank you, your interview is complete.
+  utter_q1:
+  - text: Which of the following is generally used for performing tasks like creating the structure of the relations, deleting relation?\n a)DML(Data Manipulation Language)\n b)Query\n c)Relational Schema\n d)DDL(Data Definition Language)
+  utter_q2:
+  - text: Which of the following refers to the level of data abstraction that describes exactly how the data actually stored?\na)Conceptual Level\n b)Physical Level\nc)File Level\nd)Logical Level
+  utter_q3:
+  - text: To which of the following the term "DBA" referred?\n a)Data Bank Administrator\nb)Database Administrator\nc)Data Administrator\nd)None of the above
+  utter_q4:
+  - text: Which one of the following commands is used for removing (or deleting) a relation forms the SQL database?\n a)Delete\nb)Remove\vc)Drop \n d)All of the above
+  utter_q5:
+  - text: Which one of the following commands is used to restore the database to the last committed state?\na)Savepoint\nb)Commit\nc)Rollback\nd)Both A & B
+  utter_q6:
+  - text: Which one of the following computer network is built on the top of another network?\nchief network\nb)prime network\nc)prior network\n d)overlay network
+  utter_q7:
+  - text: Communication channel is shared by all machines on the network in\na)unicast network\nb)broadcast network\nc)multicast network\nd)none of the mentioned
+  utter_q8:
+  - text: Multiplexing is used in?\na)Circuit switching\nb)Data switching\nc)Packet switching\nd)Packet & Circuit switching
+  utter_q9:
+  - text: Bluetooth is an example of\na)local area network\nb)virtual private networkc)personal area network\nd)none of the mentioned
+  utter_q10:
+  - text: What is the maximum efficiency of slotted aloha at G = 1?\na)36.8\nb)35.8\nc)35.5\nd)37.8
+  utter_q11:
+  - text: In a stack, if a user tries to remove an element from an empty stack it is called \na)Empty collection\nb)Underflow\nc)Overflow\nd)Garbage Collection
+  utter_q12:
+  - text: What is the value of the postfix expression 6 3 2 4 + – *?\na)1\nb)40\nc)74\nd)-18
+  utter_q13:
+  - text: How many bits would a succinct binary tree occupy?\na)n+O(n)\nb)2n+O(n)\nc)n/2\nd)n
+  utter_q14:
+  - text: If binary trees are represented in arrays, using what formula can a parent node be located in an array?\na)(i+1)/2\n(i-1)/2\nc)i/2\nd)2i/2
+  utter_q15:
+  - text: What is the complexity of adding an element to the heap\na)O(log n)\nb)O(h)\nc)O(log n) & O(h)\nd)O(n)
+  utter_q16:
+  - text: What is the maximum length of the filename in DOS?\na)4\nb)5\nc)8\nd)12
+  utter_q17:
+  - text: What else is a command interpreter called?\na)prompt\nb)kernel\nc)shell\nd)command
+  utter_q18:
+  - text: Banker's algorithm is used?\na)To prevent deadlock\nb)To deadlock recovery\nc)To solve the deadlock\nd)None of these
+  utter_q19:
+  - text: Which of the following is a single-user operating system?\na)Windows\nb)MAC\nc)Ms-Dos\nd)None of these
+  utter_q20:
+  - text: Which of the following is a condition that causes deadlock?\na)Mutual exclusion\nb)Hold and wait\nc)Circular wait\nd)No preemption\ne)All of these
+  utter_q21:
+  - text: Which is not a feature of OOP in general definitions?\na)Efficient Code\nb)Code reusability\nc)Modularity\nd)Duplicate/Redundant data
+  utter_q22:
+  - text: Which was the first purely object oriented programming language developed?\na)Kotlin\nb)SmallTalk\nJava\nd)C++
+  utter_q23:
+  - text: Which feature in OOP is used to allocate additional functions to a predefined operator in any language?\na)Function Overloading\nFunction Overriding\nc)Operator Overloading\nd)Operator Overriding
+  utter_q24:
+  - text: What will be the output of this function = all([2,4,0,6])?\na)False\nb)True\nc)0\nd)Invalid code
+  utter_q25:
+  - text:  Which of the following option is not a core data type in the python language?\na)Dictionary\nb)Lists\nc)Class\nd)All of the above
+  utter_q26:
+  - text: A man covers a distance of 110 km between two cities in 10 hours. He travelled partly on foot at 9 km/hr and partly on a bicycle at 15 km/hr. Find the distance travelled on foot.\na)92 km\nb)60 km\nc)94 km\nd)96 km
+  utter_q27:
+  - text: On a certain sum of money the compound interest Rs. 318 is earned in 2 years. If the rate of interest is 12%, what is the principal amount?\n1250\n1300\n1200\n1150
+  utter_q28:
+  - text: The direct opposite (diametrically opposite) of something.\na)antipode\nb)pole\nc)equator\nd)reverse
+  utter_q29:
+  - text: Pointing to a photograph of a woman Rohan says, "She is the sister-in-law of the only daughter of my mother-in-law's husband." How is the Rohan related to the woman?\na)Son\nb)Brother\nc)Brother-in-law\nd)Father
+  utter_q30:
+  - text: Which number should come next in the series, 12, 36,109, 329, _?\na)990\nb)900\nc)940\nd)890
+
+
+
+
+actions: []
+forms: {}
+e2e_actions: []
