@@ -99,10 +99,7 @@ nlu:
     - Iam ready for the interview
     - Can we start?
 
-- intent: first
-  examples: |
-    - DDL
-    - I dont know
+
 
 
 
