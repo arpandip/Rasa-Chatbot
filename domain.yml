@@ -23,7 +23,8 @@ intents:
     use_entities: true
 - goodbye:
     use_entities: true
-
+- first:
+    use_entities: true
 
 
 entities: []
